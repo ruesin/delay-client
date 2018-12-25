@@ -1,0 +1,21 @@
+{
+    "name" : "ruesin/dlycli",
+    "description": "Delay-Queue-Server's Http Client.",
+    "keywords": ["delay-queue"],
+    "authors": [
+        {
+            "name": "Ruesin Liu",
+            "email": "ruesin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-json" : "*",
+        "ext-curl" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DlyCli\\": "src/"
+        }
+    }
+}
