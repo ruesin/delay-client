@@ -2,6 +2,7 @@
     "name" : "ruesin/dlycli",
     "description": "Delay-Queue-Server's Http Client.",
     "keywords": ["delay-queue"],
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Ruesin Liu",
