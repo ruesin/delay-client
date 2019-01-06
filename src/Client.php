@@ -126,6 +126,37 @@ class Client
             return false;
         }
     }
+
+    /**
+     * 获取消息
+     * @param string $queueName 队列名称
+     * @return array|bool
+     */
+    public function getMessage($queueName)
+    {
+        try {
+            $this->request->setAction('get');
+            return $this->request->send($queueName);
+        } catch (\Exception $e) {
+            return false;
+        }
+    }
+
+    /**
+     * 删除消息
+     * @param string $queueName 队列名称
+     * @param string $messageId 消息唯一标识
+     * @return array|bool
+     */
+    public function deleteMessage($queueName, $messageId)
+    {
+        try {
+            $this->request->setAction('get');
+            return $this->request->send($queueName, ['messageId' => $messageId]);
+        } catch (\Exception $e) {
+            return false;
+        }
+    }
 }
 
 
