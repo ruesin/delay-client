@@ -151,7 +151,7 @@ class Client
     public function deleteMessage($queueName, $messageId)
     {
         try {
-            $this->request->setAction('get');
+            $this->request->setAction('del');
             return $this->request->send($queueName, ['messageId' => $messageId]);
         } catch (\Exception $e) {
             return false;
